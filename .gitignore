@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Hassas çevre değişkenleri
+.env
+
+# macOS
+.DS_Store
