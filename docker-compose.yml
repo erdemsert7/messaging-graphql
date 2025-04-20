@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 services:
   mongodb:
     image: mongo:latest
@@ -16,7 +16,7 @@ services:
 
   spring-boot:
     build:
-      context: .
+      context: ../messaging
       dockerfile: Dockerfile
     container_name: spring-boot
     ports:
@@ -35,7 +35,7 @@ services:
 
   graphql:
     build:
-      context: ../messaging-graphql
+      context: .
       dockerfile: Dockerfile
     container_name: graphql
     ports:
